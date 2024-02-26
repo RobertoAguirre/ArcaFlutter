@@ -6,11 +6,11 @@ class InvoiceCategory extends StatelessWidget {
   final String sublabel;
 
   const InvoiceCategory({
-    Key? key,
+    super.key,
     required this.icon,
     required this.label,
     required this.sublabel,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

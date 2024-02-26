@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'invoicecategory.dart';
+import 'user_profile_screen.dart';
 
 class Home extends StatelessWidget {
+  const Home({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,7 +20,10 @@ class Home extends StatelessWidget {
                 title: const Text('Configurar'),
                 trailing: const Icon(Icons.arrow_forward),
                 onTap: () {
-                  // Handle the tap
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => UserProfileScreen()),
+                    );
                 },
               ),
             ),
